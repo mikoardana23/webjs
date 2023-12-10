@@ -138,8 +138,8 @@
 <input type="text" id="ipsInput">
 <br>
 <br>
-<label>B. Inggris:</label>
-<input type="text" id="bingInput">
+<label>PKN:</label>
+<input type="text" id="pknInput">
 <br>
 <br>
 <button onclick="hitungRataRata1()">Hitung Rata-rata nilai</button>
@@ -153,24 +153,24 @@
             var mtk = parseFloat(document.getElementById('mtkInput').value);
             var ipa = parseFloat(document.getElementById('ipaInput').value);
             var ips = parseFloat(document.getElementById('ipsInput').value);
-            var bing = parseFloat(document.getElementById('bingInput').value);
-            if (isNaN(mtk) || isNaN(ipa) || isNaN(ips) || isNaN(bing)) {
+            var pkn = parseFloat(document.getElementById('pknInput').value);
+            if (isNaN(mtk) || isNaN(ipa) || isNaN(ips) || isNaN(pkn)) {
                 alert('Masukkan nilai numerik untuk semua mata pelajaran');
                 return;
             }
-            var rataRata1 = (mtk + ipa + ips + bing) / 4;
+            var rataRata1 = (mtk + ipa + ips + pkn) / 4;
             document.getElementById('hasilRataRata').innerHTML = 'Rata-rata nilai: ' + rataRata1.toFixed(2);
         }
         function nilaiTertinggi() {
             var mtk = parseFloat(document.getElementById('mtkInput').value);
             var ipa = parseFloat(document.getElementById('ipaInput').value);
             var ips = parseFloat(document.getElementById('ipsInput').value);
-            var bing = parseFloat(document.getElementById('bingInput').value);
-            if (isNaN(mtk) || isNaN(ipa) || isNaN(ips) || isNaN(bing)) {
+            var pkn = parseFloat(document.getElementById('pknInput').value);
+            if (isNaN(mtk) || isNaN(ipa) || isNaN(ips) || isNaN(pkn)) {
                 alert('Masukkan nilai numerik untuk semua mata pelajaran');
                 return;
             }
-            var nilaiTertinggi = Math.max(mtk, ipa, ips, bing);
+            var nilaiTertinggi = Math.max(mtk, ipa, ips, pkn);
             document.getElementById('hasilTertinggi').innerHTML = 'Nilai tertinggi: ' + nilaiTertinggi;
         }
     </script>

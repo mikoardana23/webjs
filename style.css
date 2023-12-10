@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* ... (other CSS styles) ... */
